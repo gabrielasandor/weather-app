@@ -1,0 +1,171 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+html {
+ background-color: rgb(164, 177, 214);
+ 
+}
+
+body {
+   background: url("https://i.pinimg.com/564x/eb/e5/a4/ebe5a4aebbca5a4fe806880a352db596.jpg") no-repeat center center fixed; 
+   min-height: 100%;
+   width:100px;
+   opacity: 0.9;
+   width: 100%;
+   height: auto;
+   position: fixed;
+   color: white
+   
+   
+  
+ }
+
+ 
+.search-box {
+  display: flex;
+  justify-content: center;
+  
+}
+.search-bar {
+  background-color: transparent;
+  border: 2px solid rgb(178, 185, 219);
+  border-radius: 50px;
+  color: rgb(70, 65, 145);
+  font-family: inherit;
+  font-size: 30px;
+  margin: 40px 0px 20px 0px ;
+  width: 35%;
+}
+
+.search-bar:focus {
+  outline: 0;
+}
+
+.location-box .location {
+ 
+  font-size: 48px;
+  font-weight: 500px;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  font-size: 30px;
+  font-weight: 300px;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .weather {
+  
+  font-size: 40px;
+  font-weight: 300px;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+@media  screen and (max-width: 600px) {
+  .search-bar {
+    width: 100%;
+  }
+
+  .weather-box .weather  {
+    font-size: 30px;
+  }
+
+  .location-box .location {
+    font-size: 25px;
+  }
+
+  .location-box .data{
+    font-size: 10px;
+  }
+}
+
+
+@media only screen and (min-width: 2560px) {
+  body {
+    background: url("https://i.pinimg.com/564x/eb/e5/a4/ebe5a4aebbca5a4fe806880a352db596.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .weather-box .weather  {
+    font-size: 90px;
+  }
+
+  .location-box .location {
+    font-size: 75px;
+  }
+
+  .location-box .data{
+    font-size: 60px;
+  }
+
+  .weather-box .temp {
+    font-size: 200px;
+  }
+
+  .search-bar {
+    margin-top: 80px;
+    font-size: 70px;
+  }
+}
